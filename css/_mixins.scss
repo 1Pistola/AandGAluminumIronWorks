@@ -2,3 +2,18 @@
 @mixin test {
     border: 1px solid black;
 }
+
+// header image
+@mixin header-image {
+    height: auto;
+    width: 25%;
+}
+//main content column setup
+@mixin column-rows {
+    display: flex;
+}
+
+@mixin two-sided-columns {
+    float: left;
+    width: 50%;
+}
