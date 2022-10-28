@@ -37,6 +37,7 @@ body {
                 color: $secondary-color;
                 font-size: $regular-font;
                 font-weight: $text-weight;
+                @include slide-animation;
             }
         }
     }
