@@ -5,21 +5,24 @@
 
 html {
     margin: 0;
+    background-color: $white-color;
 }
 //main content
-body{
+body {
     margin: 0;
+    font-family: $font-headers;
 }
 //                                 Logo area 
 .logo {
     border: 1px solid black;
     margin: 0;
-        h1{
-        border: 1px solid black;
-    }
+    max-width: 100%;
+    .header-image {
+        @include header-image;
+    }   
 }
 //                              nav bar section
-.nav-bar{
+.nav-bar {
     @include test;
     list-style-type: none;
     margin: 0;
@@ -34,8 +37,33 @@ body{
                 color: $secondary-color;
                 font-size: $regular-font;
                 font-weight: $text-weight;
-                font-family: $font-headers;
             }
         }
     }
+}
+//                       Main Content here
+#wrapper {
+    .column-row{
+        @include column-rows;
+        .left-content{
+            @include two-sided-columns;
+            @include test;
+            h1{
+                @include test;
+                text-align: center;
+            }
+            p{
+                @include test;
+                margin: 30px;
+            }
+        }
+        .right-content{
+            @include two-sided-columns;
+            @include test;
+        }
+    }
+}
+//                       Footer section
+#footer-area {
+    @include test;
 }
