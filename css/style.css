@@ -45,7 +45,7 @@ body {
 .nav-bar ul li {
   display: inline;
 }
-.nav-bar ul li a {
+.nav-bar ul li .slide {
   padding: 8px;
   text-decoration: none;
   color: #102b21;

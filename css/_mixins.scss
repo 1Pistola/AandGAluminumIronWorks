@@ -19,10 +19,10 @@
 }
 
 /* nav transitions */
-@mixin slide-animation {  
+@mixin slide-animation { 
     text-decoration: none;
     display: inline-block;
-}
+    }
 .slide:after{
     content:'';
     display: block;
