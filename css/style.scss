@@ -1,0 +1,41 @@
+//imports
+@import '_variables.scss';
+@import '_mixins.scss';
+//house keeping stuff
+
+html {
+    margin: 0;
+}
+//main content
+body{
+    margin: 0;
+}
+//                                 Logo area 
+.logo {
+    border: 1px solid black;
+    margin: 0;
+        h1{
+        border: 1px solid black;
+    }
+}
+//                              nav bar section
+.nav-bar{
+    @include test;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    ul {
+        li{
+            display: inline;
+            a{
+                padding: 8px;
+                text-decoration: none;
+                color: $secondary-color;
+                font-size: $regular-font;
+                font-weight: $text-weight;
+                font-family: $font-headers;
+            }
+        }
+    }
+}
