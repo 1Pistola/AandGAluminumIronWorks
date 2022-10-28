@@ -17,3 +17,23 @@
     float: left;
     width: 50%;
 }
+
+/* nav transitions */
+@mixin slide-animation {  
+    text-decoration: none;
+    display: inline-block;
+}
+.slide:after{
+    content:'';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s, background-color .5s;
+    -webkit-transition: width .5s ease, background-color .3s ease;
+    -moz-transition: width .5s, background-color .5s;
+}
+.slide:hover:after{
+    width: 100%;
+    background: $primary-color;
+}
