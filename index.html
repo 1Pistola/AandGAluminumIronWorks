@@ -7,35 +7,71 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="logo"><img class="header-image" src="images/main_logo.jpg" alt="website_logo_here"></div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a class="slide" href="index.html">Home</a></li>
-                <li><a class="slide" href="projects.html">Projects</a></li>
-                <li><a class="slide" href="the-team.html">The Team</a></li>
-                <li><a class="slide" href="gallery.html">Gallery</a></li>
-                <li><a class="slide" href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <header>
+            <div class="headerContainer">
+                <div class="logo">
+                    <img src="/images/main_logo.jpg"
+                    alt="main logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="slide" href="index.html">Home</a></li>
+                        <li><a class="slide" href="projects.html">Projects</a></li>
+                        <li><a class="slide" href="the-team.html">The Team</a></li>
+                        <li><a class="slide" href="gallery.html">Gallery</a></li>
+                        <li><a class="slide" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <main id="wrapper">
-            <div class="column-row">
-                <div class="left-content">
-                    <h1>Mission and Vision </h1>
-                    <p>Content will go here aswell pagman</p>
+            <div class="landPage">
+                <h1>Plan</h1>
+                <h1>Build</h1>
+                <h1>Aluminum</h1>
+            </div>
+            <div class="mainContent">
+                <div class="firstContentArea">
+                    <div class="row">
+                        <div id="box-1" class="noBorderBox"><p>1</p></div>
+                        <div id="box-2" class="noBorderBox"><p>2</p></div>
+                        <div id="box-3" class="noBorderBox"><p>3</p></div>
+                        <div id="box-4" class="noBorderBox"><p>4</p></div>
+                    </div>
+                    <div class="row">
+                        <div id="coloredBox-1" class="borderBox">1</div>
+                        <div id="coloredBox-2" class="borderBox">2</div>
+                        <div id="coloredBox-3" class="borderBox">3</div>
+                    </div>
+
                 </div>
-                <div class="right-content">
-                    <p>
-                        image will go here 
-                    </p>
+                <div id="leftRight" class="row">
+                    <div class="doubleBox" id="leftBox">left</div>
+                    <div class="doubleBox" id="rightBox">right</div>
                 </div>
+            </div>
+            <div class="shortInfo">
+
             </div>
         </main>
 
-        <footer id="footer-area">
-            <p>
-                Made and maintained by Christian Bernardino. A and G Aluminum Copyright &copy; 2022
-            </p>
+        <footer id="footer-Area">
+            <div class="footerLeft">
+                <p>Designed and maintained by Christian <br />
+                    A & G Aluminum & Ironworks Ltd. &copy;</p>
+            </div>
+            <div class="footerQuote">
+                <h2>Get a quote today!</h2>
+                <form>
+                    <label for="fName">First Name: </label>
+                    <input type="text" for="fName" id="fName" name="fName" required>
+                    <label for="lName"> Last Name: </label>
+                    <input type="text" for="lName" id="lName" name="lName" required>
+                    <label type="email" for="email">Email: </label>
+                    <input type="email" for="email" id="email" name="email" required>
+                </form>
+            </div>
         </footer>
     </body>
 </html>
