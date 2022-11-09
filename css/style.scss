@@ -104,8 +104,22 @@ body {
                 width: 100%;
             }
         }
+     }
+}
+// contactPage
+#contact {
+    .contactInfo {
+        display: flex;
+        margin: 0% 20% 0%;
+        .contactBox {
+            @include test;
+            height: 500px;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
+
 //                       Footer section
 #footer-Area {
     margin: 0%;
