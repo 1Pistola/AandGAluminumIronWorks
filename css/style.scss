@@ -7,30 +7,28 @@ html {
     margin: 0;
     background-color: $white-color;
 }
-//main content
 body {
     margin: 0;
     font-family: $font-headers;
 }
-//                                 Logo area 
-.logo {
-    border: 1px solid black;
+//                                 headerContainer 
+.headerContainer {
     margin: 0;
-    max-width: 100%;
-    .header-image {
-        @include header-image;
-    }   
-}
-//                              nav bar section
-.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @include test;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    ul {
-        li{
-            display: inline;
+    img {
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+        ul {
+            list-style-type: none;
+            display: flex;
+            width: 95%;
+            justify-content: flex-end;
+            gap: 20px;
             .slide{
                 padding: 8px;
                 text-decoration: none;
@@ -42,29 +40,87 @@ body {
         }
     }
 }
-//                       Main Content here
+//                       mainContentHere
 #wrapper {
-    .column-row{
-        @include column-rows;
-        .left-content{
-            @include two-sided-columns;
-            @include test;
-            h1{
-                @include test;
-                text-align: center;
-            }
-            p{
-                @include test;
-                margin: 30px;
-            }
+    @include test;
+    .landPage {
+        background-image: url("/images/1234.jpg");
+        height: 60vh;
+        width: auto;
+        background-position: center;
+        h1{
+            margin: 0;
+            color: $white-color;
         }
-        .right-content{
-            @include two-sided-columns;
+    }
+    .mainContent {
+        @include test;
+        .firstContentArea {
+            margin: 0 15% 0;
             @include test;
+            .row {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                @include test;
+                .noBorderBox {
+                    height: 300px;
+                    @include test;
+                    width: 100%;
+                    p {
+                        margin: 0;
+                    }
+                }
+                #coloredBox-1 {
+                    background-color: $darker-white;
+                }
+                #coloredBox-2 {
+                    background-color: $primary-color;
+                }
+                #coloredBox-3 {
+                    background-color: $secondary-color;
+                }
+                .borderBox {
+                    height: 300px;
+                    @include test;
+                    width: 100%;
+                }
+                .doubleBox {
+                    height: 300px;
+                    width: 100%;
+                    @include test;
+                }
+            }
+
+
+        }
+        #leftRight {
+            margin: 0%;
+            display: flex;
+            width: 100%;
+            .doubleBox {
+                @include test;
+                height: 300px;
+                width: 100%;
+            }
         }
     }
 }
 //                       Footer section
-#footer-area {
-    @include test;
+#footer-Area {
+    margin: 0%;
+    display: flex;
+    .footerLeft{
+        width: 75%;
+        @include test;
+    }
+    .footerQuote {
+        width: 25%;
+        min-width: 300px;
+        height: 400px;
+        @include test;
+        h2 {
+            text-align: center;
+        }
+    }
 }

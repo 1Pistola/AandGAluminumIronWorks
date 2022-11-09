@@ -5,18 +5,14 @@
 
 // header image
 @mixin header-image {
-    height: auto;
-    width: 25%;
+    
 }
-//main content column setup
-@mixin column-rows {
-    display: flex;
+//mainContent stuff
+@mixin noBorderBlock {
+    text-align: center;
 }
 
-@mixin two-sided-columns {
-    float: left;
-    width: 50%;
-}
+
 
 /* nav transitions */
 @mixin slide-animation { 
